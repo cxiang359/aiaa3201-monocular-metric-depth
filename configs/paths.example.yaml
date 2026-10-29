@@ -1,5 +1,4 @@
-# Documentation template only; no current runner consumes these fields.
+# Path convention only; runners have not been implemented yet.
 data_root: data/raw
-processed_root: data/processed
-weights_root: weights
+weights_root: data/weights
 output_root: results/raw

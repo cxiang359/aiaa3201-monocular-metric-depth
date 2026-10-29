@@ -1,4 +1,3 @@
-# Local environments and credentials
 .venv/
 venv/
 __pycache__/
@@ -12,26 +11,16 @@ configs/*.local.yml
 .DS_Store
 Thumbs.db
 
-# Datasets: metadata and documentation only
+# Local datasets and model weights
 /data/*
-!/data/README.md
-!/data/manifests/
-/data/manifests/*
-!/data/manifests/README.md
-!/data/manifests/*.csv
-!/data/manifests/*.json
-!/data/manifests/*.txt
-
-# Model assets: documentation only
-/weights/*
-!/weights/README.md
+!/data/.gitkeep
 *.pt
 *.pth
 *.ckpt
 *.safetensors
 *.onnx
 
-# Generated/bulky outputs
+# Generated large outputs
 /results/raw/
 /results/videos/
 /results/logs/
@@ -40,6 +29,8 @@ runs/
 *.mp4
 *.avi
 *.mov
+*.npy
+*.npz
 *.zip
 *.tar
 *.tar.gz
