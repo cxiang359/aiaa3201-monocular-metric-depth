@@ -1,0 +1,46 @@
+# Local environments and credentials
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+configs/*.local.yaml
+configs/*.local.yml
+.DS_Store
+Thumbs.db
+
+# Datasets: metadata and documentation only
+/data/*
+!/data/README.md
+!/data/manifests/
+/data/manifests/*
+!/data/manifests/README.md
+!/data/manifests/*.csv
+!/data/manifests/*.json
+!/data/manifests/*.txt
+
+# Model assets: documentation only
+/weights/*
+!/weights/README.md
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Generated/bulky outputs
+/results/raw/
+/results/videos/
+/results/logs/
+wandb/
+runs/
+*.mp4
+*.avi
+*.mov
+*.zip
+*.tar
+*.tar.gz
+*.7z

@@ -1,0 +1,5 @@
+# Documentation template only; no current runner consumes these fields.
+data_root: data/raw
+processed_root: data/processed
+weights_root: weights
+output_root: results/raw
