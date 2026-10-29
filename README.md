@@ -7,7 +7,7 @@ AIAA 3201 · Project 3
 
 | 成员 | Part 1 | Part 2 |
 | --- | --- | --- |
-| cxiang359 · cxiang359@connect.hkuct-gz.edu.cn | Classical Stereo | Single-Image Metric Depth |
+| cxiang359@connect.hkuct-gz.edu.cn | Classical Stereo | Single-Image Metric Depth |
 | zhaojinghan06@gmail.com | Monocular Frame Baseline | Video Depth |
 
 Part 3、评价协议、报告和最终 Demo 共同完成；通过分支与 Pull Request 交叉审核。
