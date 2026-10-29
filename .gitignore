@@ -12,8 +12,7 @@ configs/*.local.yml
 Thumbs.db
 
 # Local datasets and model weights
-/data/*
-!/data/.gitkeep
+/data/
 *.pt
 *.pth
 *.ckpt
