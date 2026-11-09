@@ -1,0 +1,30 @@
+{
+  "run_id": "p1b_da2s_v1",
+  "part": "1b",
+  "method": "Depth Anything V2-vits (frame-wise)",
+  "output": "relative depth (affine-invariant inverse depth, larger = nearer)",
+  "repo_commit": "b6168ca",
+  "upstream_commit": "a561b84",
+  "checkpoint": "data/weights/depth_anything_v2_vits.pth",
+  "frames": "results/raw/davis_frames/frames.npz",
+  "num_frames": 70,
+  "frame_hw": [
+    360,
+    640
+  ],
+  "input_size": 518,
+  "precision": "fp32",
+  "latency_ms_mean": 265.3692836008434,
+  "latency_ms_std": 92.74657780619279,
+  "latency_note": "per frame, model forward incl. resize, after warm-up, cuda-synchronized",
+  "peak_gpu_mem_mb": 375.36474609375,
+  "gpu": "NVIDIA RTX A6000",
+  "torch": "2.1.1+cu121",
+  "cuda": "12.1",
+  "python": "3.10.22",
+  "command": "part1/mono_baseline/run_da2_framewise.py --run_id p1b_da2s_v1",
+  "depth_range": [
+    0.0,
+    3.825216054916382
+  ]
+}

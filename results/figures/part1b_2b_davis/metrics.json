@@ -1,0 +1,9 @@
+{
+  "DA V2-S (frame-wise)": {
+    "mean_abs_frame_change": 0.1035282090306282
+  },
+  "VDA-S (video)": {
+    "mean_abs_frame_change": 0.10265489667654037
+  },
+  "_note": "optional, not required by the project; includes true motion, use only as a rough comparison"
+}

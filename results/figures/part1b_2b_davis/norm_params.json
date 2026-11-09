@@ -1,0 +1,15 @@
+{
+  "DA V2-S (frame-wise)": [
+    0.0,
+    2.4538238859176618
+  ],
+  "VDA-S (video)": [
+    0.0,
+    4.924804716110229
+  ],
+  "_percentiles": [
+    2.0,
+    98.0
+  ],
+  "_note": "clip-level, per method"
+}
