@@ -58,14 +58,15 @@ def main():
     args = p.parse_args()
 
     frames, fps, reader = read_frames(args.video, args.num_frames, args.max_res, args.vda_root)
-    if len(frames) != args.num_frames:
-        raise RuntimeError(f"expected {args.num_frames} frames, got {len(frames)}")
+    if len(frames) < args.num_frames:
+        print(f"[warn] requested {args.num_frames} frames, the video only has {len(frames)}; using all {len(frames)}")
 
     os.makedirs(args.out_dir, exist_ok=True)
     np.savez_compressed(os.path.join(args.out_dir, "frames.npz"), frames=frames)
     meta = {
         "video": args.video,
         "num_frames": int(len(frames)),
+        "num_frames_requested": args.num_frames,
         "fps": fps,
         "height": int(frames.shape[1]),
         "width": int(frames.shape[2]),
