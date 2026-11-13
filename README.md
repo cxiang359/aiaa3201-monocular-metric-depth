@@ -9,10 +9,23 @@ AIAA 3201 · Project 3
 
 | 模块 | 说明 | 正式结果 |
 | --- | --- | --- |
-| [Part 1A：Classical Stereo](part1/README.md) | 固定 StereoSGBM，Middlebury 15 对 trainingQ | MAE 1.9743 px；有效比例 75.98% |
-| [Part 2A：Single-Image Metric Depth](part2/README.md) | UniDepthV2 ViT-S，NYU 654 张测试，RGB-only，无测试尺度对齐 | AbsRel 0.110923；RMSE 0.393103 m；δ1 89.4488% |
+| [Part 1A：Classical Stereo](part1/classical_stereo/README.md) | 固定 StereoSGBM，Middlebury 15 对 trainingQ | MAE 1.9743 px；有效比例 75.98% |
+| [Part 2A：Single-Image Metric Depth](part2/metric_depth/README.md) | UniDepthV2 ViT-S，NYU 654 张测试，RGB-only，无测试尺度对齐 | AbsRel 0.110923；RMSE 0.393103 m；δ1 89.4488% |
 
-结果讨论：[双目分析](part1/ANALYSIS.md)、[单图深度分析](part2/ANALYSIS.md)。上传范围、目录结构及未上传内容见 [PUBLICATION.md](PUBLICATION.md)。两部分均为 CPU 实验；与其他硬件结果比较时须报告设置。
+结果讨论：[双目分析](part1/classical_stereo/ANALYSIS.md)、[单图深度分析](part2/metric_depth/ANALYSIS.md)。上传范围、目录结构及未上传内容见 [PUBLICATION.md](PUBLICATION.md)。两部分均为 CPU 实验；与其他硬件结果比较时须报告设置。
+
+## 模块目录与合并
+
+```text
+part1/
+  classical_stereo/   # Part 1A，本分支：代码、文档、配置、结果
+  mono_baseline/      # Part 1B，来自 part1b-2b 分支
+part2/
+  metric_depth/      # Part 2A，本分支：代码、文档、配置、结果
+  video_depth/       # Part 2B，来自 part1b-2b 分支
+```
+
+上图为合并后的布局；本分支只包含两个 A 模块，B 模块仍在另一分支。运行命令前进入对应模块目录。A 模块的小型结果随模块保存，B 模块已有的根目录 results/ 布局保留。
 
 ## 成员与分工
 
@@ -67,7 +80,7 @@ Part 3、评价协议、报告和最终 Demo 共同完成；通过分支与 Pull
 
 ## 环境与实验管理
 
-Part 1A / Part 2A 已完成，安装、数据准备、运行和核验命令见各模块 README。模块自身使用 `part1/data/`、`part2/data/`、`part2/weights/` 与各自 `results/`；不要移动这些文件，否则相对路径和来源校验将失效。
+Part 1A / Part 2A 已完成，安装、数据准备、运行和核验命令见各模块 README。每个模块完整放在自己的子目录中；模块自身使用 `part1/classical_stereo/data/`、`part2/metric_depth/data/`、`part2/metric_depth/weights/` 与各自 `results/`；脚本以所在模块为根目录定位文件。两位成员的模块可在各自 Part 目录下并列合并。
 
 1. 克隆仓库：`git clone https://github.com/cxiang359/aiaa3201-monocular-metric-depth.git`。
 2. 按所选模型官方实现准备环境，记录 Python、依赖版本、GPU/CUDA、上游 commit 和 checkpoint。

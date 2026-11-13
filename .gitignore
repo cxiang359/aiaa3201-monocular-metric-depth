@@ -37,14 +37,14 @@ runs/
 *.7z
 
 # Module-local datasets, dependencies and generated previews
-/part1/data/
-/part2/data/
-/part2/vendor/
-/part2/weights/
-/part2/.tmp/
-/part1/results/_invalid*/
-/part1/results/*/arrays/
-/part2/results/*/predictions/
-/part2/results/*/samples/
+/part1/classical_stereo/data/
+/part2/metric_depth/data/
+/part2/metric_depth/vendor/
+/part2/metric_depth/weights/
+/part2/metric_depth/.tmp/
+/part1/classical_stereo/results/_invalid*/
+/part1/classical_stereo/results/*/arrays/
+/part2/metric_depth/results/*/predictions/
+/part2/metric_depth/results/*/samples/
 *.html
 *.partial

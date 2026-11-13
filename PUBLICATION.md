@@ -5,7 +5,7 @@
 This branch starts from `main` and adds the Classical Stereo and Single-Image Metric Depth deliverables. It does not include the separate `part1b-2b` video branch or claim Part 3 is complete.
 
 ```text
-part1/
+part1/classical_stereo/
   README.md, ANALYSIS.md
   stereo.py, config.json, requirements.txt, test_stereo.py
   run_all.ps1, verify_results.py, make_failure_figures.py, export_html.py
@@ -15,7 +15,7 @@ part1/
     verification.json, test_results.txt, metrics.png, overview.png
     figures/<scene>/comparison.png, metadata.json
     failure_cases/*.png, roi_metrics.json
-part2/
+part2/metric_depth/
   README.md, ANALYSIS.md, REFERENCES.bib
   *.py, requirements-inference.txt, run_all.ps1, case_notes.json
   provenance/asset_manifest.json, weights_manifest.json
@@ -26,7 +26,7 @@ part2/
     figures/nyu_*.png
 ```
 
-Keeping module-root paths preserves the existing scripts, relative links and experiment source hashes. The other member's `part1/mono_baseline/` and `part2/video_depth/` can be merged later without relocating these scripts. Root README and ignore-rule changes should be reviewed when merging both branches.
+Each A deliverable is self-contained under `part1/classical_stereo/` or `part2/metric_depth/`. Code resolves paths relative to its own file, so moving the complete module preserves internal paths and experiment source hashes. After merging the separate video branch, these sit beside `part1/mono_baseline/` and `part2/video_depth/`. Root README and ignore-rule changes should still be reviewed when merging both branches.
 
 ## Included evidence
 
@@ -46,10 +46,10 @@ The tracked verification JSON files are evidence of earlier complete local check
 
 ## Reproduction entry points
 
-- Stereo setup and execution: [part1/README.md](part1/README.md).
-- UniDepth setup and execution: [part2/README.md](part2/README.md).
+- Stereo setup and execution: [part1/classical_stereo/README.md](part1/classical_stereo/README.md).
+- UniDepth setup and execution: [part2/metric_depth/README.md](part2/metric_depth/README.md).
 - Run scripts produce local datasets, floating-point outputs and HTML previews, all excluded from Git.
-- UniDepth upstream source is cloned at the recorded commit, rather than copied into this repository. Respect the upstream model license (CC BY-NC 4.0); attribution is in `part2/REFERENCES.bib`.
+- UniDepth upstream source is cloned at the recorded commit, rather than copied into this repository. Respect the upstream model license (CC BY-NC 4.0); attribution is in `part2/metric_depth/REFERENCES.bib`.
 
 ## Scope of results
 
