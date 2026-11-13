@@ -1,0 +1,20 @@
+{
+  "DA V2-S (frame-wise)": {
+    "flow_warped_abs_err_mean": 0.028398501565274986,
+    "scale_jump_mean_abs_log": 0.014043400787066776,
+    "scale_jump_max_abs_log": 0.05782056599855423,
+    "scale_jump_max_at_pair": 43,
+    "median_curve_mean_abs_2nd_diff": 0.020325947552919388
+  },
+  "VDA-S (video)": {
+    "flow_warped_abs_err_mean": 0.014539980005634867,
+    "scale_jump_mean_abs_log": 0.0030937735753705847,
+    "scale_jump_max_abs_log": 0.014014536514878273,
+    "scale_jump_max_at_pair": 68,
+    "median_curve_mean_abs_2nd_diff": 0.005654002074152231
+  },
+  "_pairs_where_VDA_lower_err": 1.0,
+  "_valid_px_per_pair_median": 43549,
+  "_source": "raw",
+  "_note": "flow = Farneback on RGB, fb<2.0px, fg>0.05, 3x3 erosion; values in clip-normalized units; consistency only, no GT. video source = approximate (8-bit, compressed)."
+}

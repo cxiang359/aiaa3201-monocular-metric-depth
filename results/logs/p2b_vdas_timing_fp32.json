@@ -1,0 +1,30 @@
+{
+  "run_id": "p2b_vdas_timing_fp32",
+  "part": "2b",
+  "method": "Video Depth Anything-vits (offline, relative)",
+  "output": "relative depth, one scale/shift for the whole clip",
+  "repo_commit": "a95e58d",
+  "upstream_commit": "4f5ae23",
+  "checkpoint": "data/weights/video_depth_anything_vits.pth",
+  "frames": "results/raw/davis_frames/frames.npz",
+  "num_frames": 70,
+  "frame_hw": [
+    360,
+    640
+  ],
+  "input_size": 518,
+  "precision": "fp32",
+  "latency_ms_per_frame": 107.05945025464254,
+  "latency_note": "whole clip through infer_video_depth (windows, stitching, resize back) / num_frames, after warm-up",
+  "total_seconds": 7.494161517824978,
+  "peak_gpu_mem_mb": 3867.1435546875,
+  "gpu": "NVIDIA RTX A6000",
+  "torch": "2.1.1+cu121",
+  "cuda": "12.1",
+  "python": "3.10.22",
+  "command": "part2/video_depth/run_vda.py --run_id p2b_vdas_timing_fp32 --fp32 --out_dir results/raw/timing_vda_fp32",
+  "depth_range": [
+    0.0,
+    7.448253154754639
+  ]
+}
