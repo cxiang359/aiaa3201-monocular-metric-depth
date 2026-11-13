@@ -1,0 +1,43 @@
+{
+  "gt_valid_pixels": 338239,
+  "evaluated_pixels": 226209,
+  "valid_fraction": 0.6687844985350595,
+  "mae_px": 1.8447548199514885,
+  "sum_absolute_error_px": 417300.14306640625,
+  "scene": "Vintage",
+  "width": 722,
+  "height": 480,
+  "num_disparities": 192,
+  "calib_ndisp": 190.0,
+  "inference_ms": 53.8162998855114,
+  "timing_samples_ms": [
+    53.62860020250082,
+    54.22049993649125,
+    53.8162998855114
+  ],
+  "pipeline_ms": 56.49060010910034,
+  "input_sha256": {
+    "im0.png": "7042ff4a715e683ee57a7cf42caec57121a0fab68f86440f2014b5c8685864c5",
+    "im1.png": "faeed68e7ecf395702b6bc99094d42a4db4163d0b7a77dbcbb1452c9cdff8b7d",
+    "calib.txt": "f9840cc430cab9192a1a8e7a713ab20199c3446a090b0710fd24c626b2ad6c81",
+    "disp0GT.pfm": "203b5ffd69a7d997e6666dd03dd91d9df8f0af20e85c44559d96ea8043cebf91"
+  },
+  "lr_reverse_inference_ms": 58.366500306874514,
+  "lr_checked_pixels": 173518,
+  "lr_failed_fraction_of_checked": 0.03352389953780011,
+  "visualization_ranges": {
+    "disparity_px": [
+      0.0,
+      192.0
+    ],
+    "depth_m": [
+      1.259347677230835,
+      2.5104079246520996
+    ],
+    "absolute_error_px": [
+      0,
+      10.0
+    ],
+    "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+  }
+}

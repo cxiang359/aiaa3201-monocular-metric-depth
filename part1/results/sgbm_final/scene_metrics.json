@@ -1,0 +1,647 @@
+[
+  {
+    "gt_valid_pixels": 354918,
+    "evaluated_pixels": 295655,
+    "valid_fraction": 0.833023402588767,
+    "mae_px": 1.2950976678313102,
+    "sum_absolute_error_px": 382902.100982666,
+    "scene": "Adirondack",
+    "width": 718,
+    "height": 496,
+    "num_disparities": 80,
+    "calib_ndisp": 73.0,
+    "inference_ms": 36.32439998909831,
+    "timing_samples_ms": [
+      37.86219982430339,
+      36.32439998909831,
+      34.76920025423169
+    ],
+    "pipeline_ms": 39.308400359004736,
+    "input_sha256": {
+      "im0.png": "edf9ae03c0bd3251a0d2a6e66a9cd570abad3472c3b5f6c3730becaf7176d896",
+      "im1.png": "13a9c20682787006b6b9afc9203e0fa8f178c3e85e0d066a835a79181c1410f5",
+      "calib.txt": "87374b6cbeb5802f1b6488bdaec08a08ed4d729f3b392e0bd975307764eac557",
+      "disp0GT.pfm": "265ee6a413c3335a821f9885f406de1a227158dd0ef9f970d247e5efdec296d6"
+    },
+    "lr_reverse_inference_ms": 34.202400129288435,
+    "lr_checked_pixels": 267325,
+    "lr_failed_fraction_of_checked": 0.024169082577387077,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        1.6752610206604004,
+        2.802971363067627
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 95949,
+    "evaluated_pixels": 62458,
+    "valid_fraction": 0.6509499838455847,
+    "mae_px": 2.075610810464632,
+    "sum_absolute_error_px": 129638.5,
+    "scene": "ArtL",
+    "width": 347,
+    "height": 277,
+    "num_disparities": 64,
+    "calib_ndisp": 64.0,
+    "inference_ms": 10.485799983143806,
+    "timing_samples_ms": [
+      7.420599926263094,
+      10.796499904245138,
+      10.485799983143806
+    ],
+    "pipeline_ms": 10.567099787294865,
+    "input_sha256": {
+      "im0.png": "a29a9a9289bbc6428342b6a7d0b5141efcb6dd5a0cb88cae618d80f1e088f9cc",
+      "im1.png": "b12a0833a4591ff775dd548f14af2a7e8d569084f25e8ec2ab913b84fc85237c",
+      "calib.txt": "ef734a74f2c513cfc689c5ebe9b371f04d750d062ab1690b4c284a32166824cf",
+      "disp0GT.pfm": "e0bb550d8cd4d2570413dfe74495f1d43a05026796ca4e1c4b65f195b3bad861"
+    },
+    "lr_reverse_inference_ms": 11.783200316131115,
+    "lr_checked_pixels": 50929,
+    "lr_failed_fraction_of_checked": 0.04335447387539516,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        64.0
+      ],
+      "depth_m": [
+        1.439326524734497,
+        2.139052629470825
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 322967,
+    "evaluated_pixels": 183277,
+    "valid_fraction": 0.5674790303653314,
+    "mae_px": 5.512497717355024,
+    "sum_absolute_error_px": 1010314.0441436768,
+    "scene": "Jadeplant",
+    "width": 659,
+    "height": 497,
+    "num_disparities": 160,
+    "calib_ndisp": 160.0,
+    "inference_ms": 45.123899821192026,
+    "timing_samples_ms": [
+      45.123899821192026,
+      44.99930003657937,
+      45.521900057792664
+    ],
+    "pipeline_ms": 66.53189985081553,
+    "input_sha256": {
+      "im0.png": "f8248440b1c3421e01343983a0724db70e64af32235e9d145d1c808615417a76",
+      "im1.png": "2d7691f7c177cbdf6728f1ddfacde845a2e4b24692f0b92d243dcd59d621f9f9",
+      "calib.txt": "7344b0bf4cd4ee185723942eb6bf8fe34667a0b2cebdf5a8351fe77ed0ea0813",
+      "disp0GT.pfm": "0228d78b98a2736c89e6620388b83e5a16d85d7bb64b22591a50e5edcd48d310"
+    },
+    "lr_reverse_inference_ms": 63.73640010133386,
+    "lr_checked_pixels": 129538,
+    "lr_failed_fraction_of_checked": 0.06467600240855965,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        160.0
+      ],
+      "depth_m": [
+        2.0330312252044678,
+        3.239060401916504
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 360593,
+    "evaluated_pixels": 303128,
+    "valid_fraction": 0.840637505442424,
+    "mae_px": 1.158355436586578,
+    "sum_absolute_error_px": 351129.9667816162,
+    "scene": "Motorcycle",
+    "width": 741,
+    "height": 497,
+    "num_disparities": 80,
+    "calib_ndisp": 70.0,
+    "inference_ms": 48.01579983904958,
+    "timing_samples_ms": [
+      49.10420021042228,
+      48.01579983904958,
+      40.87410029023886
+    ],
+    "pipeline_ms": 42.217000387609005,
+    "input_sha256": {
+      "im0.png": "a7b3988b02447c190309b0503da3db036d0c6c0380c3b9b6acda3d66594f5312",
+      "im1.png": "9bb3c7fa53a27f003223b2fc504f86e1647f70cb2d25f3baedf3127957934a87",
+      "calib.txt": "d886e8f78085eb3a13f45e1a70a5fdbeb09a2a2091e364536269318d4ffa5e52",
+      "disp0GT.pfm": "b7c4557ec53314d97643f3e3f7c4098eb992aaab193937e03a7759b42dfa6f11"
+    },
+    "lr_reverse_inference_ms": 36.17439977824688,
+    "lr_checked_pixels": 281936,
+    "lr_failed_fraction_of_checked": 0.015503518529027864,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        2.0762436389923096,
+        4.2193403244018555
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 360593,
+    "evaluated_pixels": 278426,
+    "valid_fraction": 0.7721336797996633,
+    "mae_px": 1.288802361940987,
+    "sum_absolute_error_px": 358836.08642578125,
+    "scene": "MotorcycleE",
+    "width": 741,
+    "height": 497,
+    "num_disparities": 80,
+    "calib_ndisp": 70.0,
+    "inference_ms": 36.72500001266599,
+    "timing_samples_ms": [
+      37.89159981533885,
+      36.640800070017576,
+      36.72500001266599
+    ],
+    "pipeline_ms": 45.14549998566508,
+    "input_sha256": {
+      "im0.png": "a7b3988b02447c190309b0503da3db036d0c6c0380c3b9b6acda3d66594f5312",
+      "im1.png": "e86151aad3da99ea3e7be4a9c3269ded759e97824b448b2047d6da12797f8cc5",
+      "calib.txt": "d886e8f78085eb3a13f45e1a70a5fdbeb09a2a2091e364536269318d4ffa5e52",
+      "disp0GT.pfm": "b7c4557ec53314d97643f3e3f7c4098eb992aaab193937e03a7759b42dfa6f11"
+    },
+    "lr_reverse_inference_ms": 37.52709971740842,
+    "lr_checked_pixels": 220811,
+    "lr_failed_fraction_of_checked": 0.03167414666841779,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        2.067896604537964,
+        4.236717224121094
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 321854,
+    "evaluated_pixels": 263446,
+    "valid_fraction": 0.8185264125970161,
+    "mae_px": 1.2486626911106133,
+    "sum_absolute_error_px": 328955.19132232666,
+    "scene": "Piano",
+    "width": 707,
+    "height": 481,
+    "num_disparities": 80,
+    "calib_ndisp": 65.0,
+    "inference_ms": 34.57729984074831,
+    "timing_samples_ms": [
+      34.57729984074831,
+      34.125300124287605,
+      35.82140011712909
+    ],
+    "pipeline_ms": 47.55240026861429,
+    "input_sha256": {
+      "im0.png": "22dee69c42fb2e7bab34415cfda2aa20b88032b6449a043ae793b5a7438e4c5d",
+      "im1.png": "fb8f47fb73d49bf5f8c3447c697b175286870860f77d57404b13b59f174dca68",
+      "calib.txt": "2be57753cbe419293560f5fb47575378b29c11ea9c2c59635d9c50f1cdae1b99",
+      "disp0GT.pfm": "eef5202a45a5cfd5fe016e97bd40cb30ac0be7832fab8d9c885c07d409994461"
+    },
+    "lr_reverse_inference_ms": 43.55299985036254,
+    "lr_checked_pixels": 251704,
+    "lr_failed_fraction_of_checked": 0.025168451832310968,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        1.685839056968689,
+        2.836494207382202
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 321854,
+    "evaluated_pixels": 195863,
+    "valid_fraction": 0.60854611096957,
+    "mae_px": 6.136265732521008,
+    "sum_absolute_error_px": 1201867.4151687622,
+    "scene": "PianoL",
+    "width": 707,
+    "height": 481,
+    "num_disparities": 80,
+    "calib_ndisp": 65.0,
+    "inference_ms": 33.27860031276941,
+    "timing_samples_ms": [
+      33.11990015208721,
+      33.27860031276941,
+      34.18410010635853
+    ],
+    "pipeline_ms": 45.99589994177222,
+    "input_sha256": {
+      "im0.png": "22dee69c42fb2e7bab34415cfda2aa20b88032b6449a043ae793b5a7438e4c5d",
+      "im1.png": "e0829b470a3f2d1466f3bdf7f81446c9fe5dc3a3604d44724c056d6f286816c0",
+      "calib.txt": "2be57753cbe419293560f5fb47575378b29c11ea9c2c59635d9c50f1cdae1b99",
+      "disp0GT.pfm": "eef5202a45a5cfd5fe016e97bd40cb30ac0be7832fab8d9c885c07d409994461"
+    },
+    "lr_reverse_inference_ms": 34.87659990787506,
+    "lr_checked_pixels": 157475,
+    "lr_failed_fraction_of_checked": 0.09107477377361486,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        1.1510885953903198,
+        3.5939760208129883
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 343922,
+    "evaluated_pixels": 269518,
+    "valid_fraction": 0.7836602485447282,
+    "mae_px": 2.103912067269669,
+    "sum_absolute_error_px": 567042.1725463867,
+    "scene": "Pipes",
+    "width": 735,
+    "height": 485,
+    "num_disparities": 80,
+    "calib_ndisp": 75.0,
+    "inference_ms": 37.69580041989684,
+    "timing_samples_ms": [
+      37.68250020220876,
+      55.25929993018508,
+      37.69580041989684
+    ],
+    "pipeline_ms": 40.26699997484684,
+    "input_sha256": {
+      "im0.png": "e891bc253b5a73a3c258fa571ef302f1f531ffcd59b505f7aa5760168a51fde1",
+      "im1.png": "26db33f99f5d448fd623bd5d6d61ac57c07a07b9ebad9d9aaf0bd2aa77ec8d4d",
+      "calib.txt": "6d57705f282b57ec56e475fb6ad46955256470d71d088d3283b1013ce2e62a60",
+      "disp0GT.pfm": "7c0fd88e4821cce0544d51c6c9925d0a73a558226289af27997572ca9fcd361b"
+    },
+    "lr_reverse_inference_ms": 35.446000285446644,
+    "lr_checked_pixels": 246912,
+    "lr_failed_fraction_of_checked": 0.03238805728356661,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        2.8464109897613525,
+        7.700478553771973
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 314728,
+    "evaluated_pixels": 237975,
+    "valid_fraction": 0.7561291019547037,
+    "mae_px": 1.3601202048578112,
+    "sum_absolute_error_px": 323674.6057510376,
+    "scene": "Playroom",
+    "width": 699,
+    "height": 476,
+    "num_disparities": 96,
+    "calib_ndisp": 83.0,
+    "inference_ms": 36.689099855721,
+    "timing_samples_ms": [
+      35.21290002390742,
+      36.689099855721,
+      40.36539979279041
+    ],
+    "pipeline_ms": 50.48559978604317,
+    "input_sha256": {
+      "im0.png": "8063ce1fef9c5cc36c9c61f3f22dee26e7287af9044df6fb0bfa6d4b3fde9d1e",
+      "im1.png": "54503fdcf6bc7f2af228756f6c6e35570e6f3003763c799aa9ddbdd34c9b1c0c",
+      "calib.txt": "d7b2f1e8e00dae0d1e576bf66b440509ba844dad7481a0b5ef23ea0747461caa",
+      "disp0GT.pfm": "8e39ebb0f392ca9c5a98638f71ab355a7b7eaea3a9a7c21d32e00e2d9e4165c9"
+    },
+    "lr_reverse_inference_ms": 41.61479976028204,
+    "lr_checked_pixels": 223075,
+    "lr_failed_fraction_of_checked": 0.03891964585901603,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        96.0
+      ],
+      "depth_m": [
+        2.473841428756714,
+        4.122777938842773
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 306395,
+    "evaluated_pixels": 251522,
+    "valid_fraction": 0.8209076518872697,
+    "mae_px": 1.2706303563699122,
+    "sum_absolute_error_px": 319591.48849487305,
+    "scene": "Playtable",
+    "width": 680,
+    "height": 463,
+    "num_disparities": 80,
+    "calib_ndisp": 73.0,
+    "inference_ms": 31.050499994307756,
+    "timing_samples_ms": [
+      32.108199782669544,
+      30.455899890512228,
+      31.050499994307756
+    ],
+    "pipeline_ms": 33.83939992636442,
+    "input_sha256": {
+      "im0.png": "81f7e1c5ab1543d038fa5907f0572c02cff23d6c061773f20da8918baeff6deb",
+      "im1.png": "bb355856d6f2056be9368d941968dbdb0dd84e3e5c79298acd4cec89d59add29",
+      "calib.txt": "9ea58e552710bb730b2968c7373162663bc3e1d3a4d267beb8cbfc5b7cb6ba18",
+      "disp0GT.pfm": "d0cc802ecdbdbf56a1356087b5d963c771176ebbcaa20e8cbe023befa7e95e80"
+    },
+    "lr_reverse_inference_ms": 33.17040018737316,
+    "lr_checked_pixels": 230037,
+    "lr_failed_fraction_of_checked": 0.03745919134747888,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        1.349247932434082,
+        2.9445087909698486
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 306154,
+    "evaluated_pixels": 253283,
+    "valid_fraction": 0.8273058656754444,
+    "mae_px": 1.0628092235551434,
+    "sum_absolute_error_px": 269191.5085697174,
+    "scene": "PlaytableP",
+    "width": 681,
+    "height": 462,
+    "num_disparities": 80,
+    "calib_ndisp": 73.0,
+    "inference_ms": 42.95419994741678,
+    "timing_samples_ms": [
+      44.22010015696287,
+      42.95419994741678,
+      39.09400012344122
+    ],
+    "pipeline_ms": 50.52429996430874,
+    "input_sha256": {
+      "im0.png": "e59c9db5a1fc3b19b4dbcb8a3c735f6119bcf5f6f148d39d4249ad81973a95e3",
+      "im1.png": "779213a6ee111e936cf44bd54e8b5d302a697cfcedd4a5e4d73ddaa326f9f8c2",
+      "calib.txt": "a789f540c408802f3d6d469ff4e6894561105e2d2cd24a86172490173ef13a4e",
+      "disp0GT.pfm": "197f58b51ce80acbd53680948d3b4cb36f1671fcf40488cb61f239550179036b"
+    },
+    "lr_reverse_inference_ms": 45.26429995894432,
+    "lr_checked_pixels": 233297,
+    "lr_failed_fraction_of_checked": 0.025954041415020338,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        1.3843779563903809,
+        3.0528128147125244
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 344067,
+    "evaluated_pixels": 286629,
+    "valid_fraction": 0.833061583935687,
+    "mae_px": 0.8160268273315364,
+    "sum_absolute_error_px": 233896.95349121094,
+    "scene": "Recycle",
+    "width": 720,
+    "height": 486,
+    "num_disparities": 80,
+    "calib_ndisp": 65.0,
+    "inference_ms": 34.22180004417896,
+    "timing_samples_ms": [
+      39.57659984007478,
+      34.22180004417896,
+      33.96360017359257
+    ],
+    "pipeline_ms": 43.847199995070696,
+    "input_sha256": {
+      "im0.png": "63076e5c00650431e0d1e0ff6765f7f7f4be3e85966e9e09a111e68e2f2fc6fd",
+      "im1.png": "e75e3fcdf19b13b02ad3278d40e42e4e6800be2b9dbd69a03ab3f498cc44baec",
+      "calib.txt": "2e7a875a6e20667be1d7155cec741aa48151bd5fb10ba62917a6186451004201",
+      "disp0GT.pfm": "cf755541547336db621fa073925e01ad8baec931ff44995ac19d0081a4effd16"
+    },
+    "lr_reverse_inference_ms": 38.777600042521954,
+    "lr_checked_pixels": 260620,
+    "lr_failed_fraction_of_checked": 0.022530887882741157,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        80.0
+      ],
+      "depth_m": [
+        1.4021586179733276,
+        2.3987457752227783
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 328965,
+    "evaluated_pixels": 263650,
+    "valid_fraction": 0.8014530421169426,
+    "mae_px": 1.7310554374175395,
+    "sum_absolute_error_px": 456392.7660751343,
+    "scene": "Shelves",
+    "width": 738,
+    "height": 497,
+    "num_disparities": 64,
+    "calib_ndisp": 60.0,
+    "inference_ms": 39.30669976398349,
+    "timing_samples_ms": [
+      38.40220021083951,
+      39.30669976398349,
+      44.439100194722414
+    ],
+    "pipeline_ms": 37.85069985315204,
+    "input_sha256": {
+      "im0.png": "ec20b8b4f1334d5a7167fe214ca32207b3cf5a490e0a68c92ee4672225e521f5",
+      "im1.png": "76095d15bb1173334d6cd4374cf54cf195033ae68a453392b0717d79b50cfd77",
+      "calib.txt": "d202fb16fb03a377e3179b2da77a605a2a896464425223dc92523552fd8c0608",
+      "disp0GT.pfm": "afec37afab28de8542cf5dc14611210ff920c40a0a0f409ecdcc40ae77205ae5"
+    },
+    "lr_reverse_inference_ms": 36.24929999932647,
+    "lr_checked_pixels": 274835,
+    "lr_failed_fraction_of_checked": 0.03273236669274292,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        64.0
+      ],
+      "depth_m": [
+        2.489384651184082,
+        3.528956413269043
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 164812,
+    "evaluated_pixels": 134243,
+    "valid_fraction": 0.8145220008251827,
+    "mae_px": 0.71030612396922,
+    "sum_absolute_error_px": 95353.625,
+    "scene": "Teddy",
+    "width": 450,
+    "height": 375,
+    "num_disparities": 64,
+    "calib_ndisp": 64.0,
+    "inference_ms": 14.589699916541576,
+    "timing_samples_ms": [
+      16.17940003052354,
+      14.567200094461441,
+      14.589699916541576
+    ],
+    "pipeline_ms": 20.186000037938356,
+    "input_sha256": {
+      "im0.png": "0620f5cb513ca67aaaf3702c0b1e261641d67171ad56fa0934ca4cede638b023",
+      "im1.png": "2c377edb3c2144f32c56c4c969ec5dcb6b6bf02db9c95e21d24e70ac5fe6b350",
+      "calib.txt": "25c523c597aa84679f09e19f9cc79d899a4172ca40dc7b33314d7a9a752e25bc",
+      "disp0GT.pfm": "895744a0bed14c428b98a8aeba63053f4b52279ba8284ecf9d15fa045444217e"
+    },
+    "lr_reverse_inference_ms": 18.19249987602234,
+    "lr_checked_pixels": 125334,
+    "lr_failed_fraction_of_checked": 0.01902915410024415,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        64.0
+      ],
+      "depth_m": [
+        1.2673267126083374,
+        1.7893755435943604
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  },
+  {
+    "gt_valid_pixels": 338239,
+    "evaluated_pixels": 226209,
+    "valid_fraction": 0.6687844985350595,
+    "mae_px": 1.8447548199514885,
+    "sum_absolute_error_px": 417300.14306640625,
+    "scene": "Vintage",
+    "width": 722,
+    "height": 480,
+    "num_disparities": 192,
+    "calib_ndisp": 190.0,
+    "inference_ms": 53.8162998855114,
+    "timing_samples_ms": [
+      53.62860020250082,
+      54.22049993649125,
+      53.8162998855114
+    ],
+    "pipeline_ms": 56.49060010910034,
+    "input_sha256": {
+      "im0.png": "7042ff4a715e683ee57a7cf42caec57121a0fab68f86440f2014b5c8685864c5",
+      "im1.png": "faeed68e7ecf395702b6bc99094d42a4db4163d0b7a77dbcbb1452c9cdff8b7d",
+      "calib.txt": "f9840cc430cab9192a1a8e7a713ab20199c3446a090b0710fd24c626b2ad6c81",
+      "disp0GT.pfm": "203b5ffd69a7d997e6666dd03dd91d9df8f0af20e85c44559d96ea8043cebf91"
+    },
+    "lr_reverse_inference_ms": 58.366500306874514,
+    "lr_checked_pixels": 173518,
+    "lr_failed_fraction_of_checked": 0.03352389953780011,
+    "visualization_ranges": {
+      "disparity_px": [
+        0.0,
+        192.0
+      ],
+      "depth_m": [
+        1.259347677230835,
+        2.5104079246520996
+      ],
+      "absolute_error_px": [
+        0,
+        10.0
+      ],
+      "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+    }
+  }
+]

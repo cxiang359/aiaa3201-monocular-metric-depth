@@ -1,0 +1,14 @@
+vendor/
+weights/
+data/
+.tmp/
+__pycache__/
+*.pyc
+results/*/predictions/
+*.partial
+logs/hf_model_info.json
+
+# Generated local previews and bulk records
+*.html
+html_export_manifest.json
+results/*/samples/

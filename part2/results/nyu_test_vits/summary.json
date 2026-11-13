@@ -1,0 +1,14 @@
+{
+  "absrel": 0.1109227069129996,
+  "rmse_m": 0.39310300469882536,
+  "delta1": 0.8944884969859935,
+  "status": "complete",
+  "images_evaluated": 654,
+  "expected_images": 654,
+  "split": "test",
+  "mean_inference_ms": 1119.3579747661981,
+  "median_inference_ms": 1078.8488001562655,
+  "gpu_peak_allocated_mb": null,
+  "max_process_rss_mb": 832.75390625,
+  "aggregation": "Equal per-image average; no scale fitting or alignment"
+}

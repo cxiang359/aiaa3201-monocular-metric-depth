@@ -1,0 +1,47 @@
+[
+  {
+    "scene": "PianoL",
+    "roi_xyxy": [
+      424,
+      38,
+      699,
+      322
+    ],
+    "title": "Lighting difference: lamp and rear wall",
+    "gt_valid_pixels": 74740,
+    "evaluated_pixels": 39569,
+    "roi_mae_px": 21.21003815347429,
+    "roi_valid_fraction": 0.5294219962536795,
+    "selection": "manual fixed visual diagnostic ROI, not a benchmark or causal ablation"
+  },
+  {
+    "scene": "Jadeplant",
+    "roi_xyxy": [
+      250,
+      19,
+      606,
+      298
+    ],
+    "title": "Fine leaves, branches and depth discontinuities",
+    "gt_valid_pixels": 98225,
+    "evaluated_pixels": 65561,
+    "roi_mae_px": 7.409201592232866,
+    "roi_valid_fraction": 0.6674573682870959,
+    "selection": "manual fixed visual diagnostic ROI, not a benchmark or causal ablation"
+  },
+  {
+    "scene": "Pipes",
+    "roi_xyxy": [
+      176,
+      164,
+      676,
+      455
+    ],
+    "title": "Repeated pipes, junctions and boundaries",
+    "gt_valid_pixels": 138895,
+    "evaluated_pixels": 115765,
+    "roi_mae_px": 2.4754256396140617,
+    "roi_valid_fraction": 0.8334713272616004,
+    "selection": "manual fixed visual diagnostic ROI, not a benchmark or causal ablation"
+  }
+]

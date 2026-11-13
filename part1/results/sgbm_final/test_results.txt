@@ -1,0 +1,11 @@
+test_actual_sgbm_recovers_known_horizontal_shift (test_stereo.StereoCorrectnessTests.test_actual_sgbm_recovers_known_horizontal_shift) ... ok
+test_fixed_point_invalid_sentinel_and_zero_disparity (test_stereo.StereoCorrectnessTests.test_fixed_point_invalid_sentinel_and_zero_disparity) ... ok
+test_left_right_sign_and_out_of_bounds (test_stereo.StereoCorrectnessTests.test_left_right_sign_and_out_of_bounds) ... ok
+test_mae_and_coverage_have_different_denominators (test_stereo.StereoCorrectnessTests.test_mae_and_coverage_have_different_denominators) ... ok
+test_metric_units_doffs_and_invalid_values (test_stereo.StereoCorrectnessTests.test_metric_units_doffs_and_invalid_values) ... ok
+test_middlebury_pfm_bottom_up_endianness_without_radiometric_scale (test_stereo.StereoCorrectnessTests.test_middlebury_pfm_bottom_up_endianness_without_radiometric_scale) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.203s
+
+OK

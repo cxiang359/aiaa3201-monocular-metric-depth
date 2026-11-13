@@ -1,0 +1,13 @@
+{
+  "scene_count": 15,
+  "scenes_with_valid_predictions": 15,
+  "macro_mae_px": 1.9743271652354981,
+  "macro_valid_fraction": 0.7598080079388916,
+  "pooled_mae_px": 1.8389637603535451,
+  "pooled_valid_fraction": 0.7643424240243698,
+  "gt_valid_pixels": 4586010,
+  "evaluated_pixels": 3505282,
+  "mean_inference_ms": 35.65699330841502,
+  "mean_pipeline_ms": 42.05393334850669,
+  "aggregation": "Macro: equal weight per scene; pooled: pixel-weighted. MAE uses valid predictions only."
+}

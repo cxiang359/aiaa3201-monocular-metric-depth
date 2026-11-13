@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-11-09T14:58:17.096156+00:00",
+  "status": "complete",
+  "command": [
+    "python",
+    "stereo.py",
+    "run",
+    "--lr-check",
+    "--output",
+    "results/sgbm_final"
+  ],
+  "source_files": {
+    "stereo.py": "973a626b100c533a3196425049a97d50491de187b9b48fdd5738ddd4414224f9",
+    "config.json": "b2dfa2df088b59ec52e78b7fa31b1cbccf328b56fda9291c41e42024cbd53e12"
+  },
+  "config": {
+    "method": "StereoSGBM",
+    "min_disparity": 0,
+    "num_disparities": "calib_ndisp_rounded_up_to_16",
+    "block_size": 5,
+    "p1": 200,
+    "p2": 800,
+    "disp12_max_diff": 1,
+    "pre_filter_cap": 31,
+    "uniqueness_ratio": 10,
+    "speckle_window_size": 100,
+    "speckle_range": 2,
+    "mode": "SGBM_3WAY",
+    "opencv_threads": 1,
+    "timing_repeats": 3,
+    "lr_threshold_px": 1.0,
+    "error_display_max_px": 10.0
+  },
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "logical_cpus": 16,
+    "python": "3.13.13",
+    "opencv": "5.0.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0",
+    "backend": "OpenCV CPU",
+    "precision": "uint8 grayscale input; int16 fixed-point output; float32 stored maps",
+    "gpu_peak_memory": "N/A: CPU-only stereo, no GPU inference",
+    "opencv_threads": 1
+  },
+  "scenes": [
+    "Adirondack",
+    "ArtL",
+    "Jadeplant",
+    "Motorcycle",
+    "MotorcycleE",
+    "Piano",
+    "PianoL",
+    "Pipes",
+    "Playroom",
+    "Playtable",
+    "PlaytableP",
+    "Recycle",
+    "Shelves",
+    "Teddy",
+    "Vintage"
+  ],
+  "lr_diagnostic": true,
+  "dataset": "<project>\\part1\\data\\trainingQ",
+  "course_scope": "Stereo only; partner owns monocular frame baseline",
+  "units": {
+    "disparity": "pixels",
+    "depth": "meters",
+    "baseline": "millimeters"
+  },
+  "pfm_convention": "Middlebury native pixel float payload; scale sign is endian, magnitude ignored",
+  "finished_utc": "2026-11-09T14:58:40.807275+00:00",
+  "summary": {
+    "scene_count": 15,
+    "scenes_with_valid_predictions": 15,
+    "macro_mae_px": 1.9743271652354981,
+    "macro_valid_fraction": 0.7598080079388916,
+    "pooled_mae_px": 1.8389637603535451,
+    "pooled_valid_fraction": 0.7643424240243698,
+    "gt_valid_pixels": 4586010,
+    "evaluated_pixels": 3505282,
+    "mean_inference_ms": 35.65699330841502,
+    "mean_pipeline_ms": 42.05393334850669,
+    "aggregation": "Macro: equal weight per scene; pooled: pixel-weighted. MAE uses valid predictions only."
+  }
+}

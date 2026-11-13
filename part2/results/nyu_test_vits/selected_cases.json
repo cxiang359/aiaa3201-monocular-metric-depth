@@ -1,0 +1,125 @@
+{
+  "selection": "first, median AbsRel, and three highest AbsRel; descriptive only",
+  "cases": [
+    {
+      "test_position": 0,
+      "zero_based_index": 0,
+      "matlab_id": 1,
+      "absrel": 0.09360025961375022,
+      "rmse_m": 0.2832561509675589,
+      "delta1": 0.9980969148222669,
+      "valid_pixels": 238560,
+      "prediction_clipped_pixels": 0,
+      "inference_ms": 1097.791800275445,
+      "gpu_peak_allocated_mb": null,
+      "encoder_shape": [
+        1,
+        3,
+        434,
+        574
+      ],
+      "output_shape": [
+        480,
+        640
+      ],
+      "process_rss_mb": 799.1796875,
+      "prediction_sha256": "2a4759bb07c2df86405b8e7472c3aeb98ad0be530266b13834d3db21232378d8"
+    },
+    {
+      "test_position": 464,
+      "zero_based_index": 1101,
+      "matlab_id": 1102,
+      "absrel": 0.09588777203482352,
+      "rmse_m": 0.2498268480387796,
+      "delta1": 0.9035169349429912,
+      "valid_pixels": 238560,
+      "prediction_clipped_pixels": 0,
+      "inference_ms": 1052.6448003947735,
+      "gpu_peak_allocated_mb": null,
+      "encoder_shape": [
+        1,
+        3,
+        434,
+        574
+      ],
+      "output_shape": [
+        480,
+        640
+      ],
+      "process_rss_mb": 798.3046875,
+      "prediction_sha256": "6f3d454b32051fd2d35b508f28a8ea0cdfee111c41cae601e70de1dbbc26515c"
+    },
+    {
+      "test_position": 201,
+      "zero_based_index": 516,
+      "matlab_id": 517,
+      "absrel": 0.39941221367986995,
+      "rmse_m": 0.7894872234627186,
+      "delta1": 0.5818033199195171,
+      "valid_pixels": 238560,
+      "prediction_clipped_pixels": 0,
+      "inference_ms": 1091.9289998710155,
+      "gpu_peak_allocated_mb": null,
+      "encoder_shape": [
+        1,
+        3,
+        434,
+        574
+      ],
+      "output_shape": [
+        480,
+        640
+      ],
+      "process_rss_mb": 801.296875,
+      "prediction_sha256": "2d381f04dc401ba6c487bd433480d829b3d02c269c1c89764f20961fdedb2228"
+    },
+    {
+      "test_position": 184,
+      "zero_based_index": 468,
+      "matlab_id": 469,
+      "absrel": 0.4446621830858603,
+      "rmse_m": 1.2391973940201146,
+      "delta1": 0.5528043259557344,
+      "valid_pixels": 238560,
+      "prediction_clipped_pixels": 0,
+      "inference_ms": 1035.5863999575377,
+      "gpu_peak_allocated_mb": null,
+      "encoder_shape": [
+        1,
+        3,
+        434,
+        574
+      ],
+      "output_shape": [
+        480,
+        640
+      ],
+      "process_rss_mb": 801.08203125,
+      "prediction_sha256": "ee6f2ecae432814378e9dcc90a83f370afd67b5670001e85aef5ba570381d202"
+    },
+    {
+      "test_position": 42,
+      "zero_based_index": 87,
+      "matlab_id": 88,
+      "absrel": 0.6198235494304797,
+      "rmse_m": 2.0117458002312483,
+      "delta1": 0.26908534540576795,
+      "valid_pixels": 238560,
+      "prediction_clipped_pixels": 80488,
+      "inference_ms": 1037.9666001535952,
+      "gpu_peak_allocated_mb": null,
+      "encoder_shape": [
+        1,
+        3,
+        434,
+        574
+      ],
+      "output_shape": [
+        480,
+        640
+      ],
+      "process_rss_mb": 776.67578125,
+      "prediction_sha256": "5e5f09f581bb5491f4378b3f991fdacd34a58f8b901c7724a24a1be808b27725"
+    }
+  ]
+}

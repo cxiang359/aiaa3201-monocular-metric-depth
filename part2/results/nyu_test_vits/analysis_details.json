@@ -1,0 +1,104 @@
+{
+  "summary": {
+    "absrel": 0.1109227069129996,
+    "rmse_m": 0.39310300469882536,
+    "delta1": 0.8944884969859935,
+    "status": "complete",
+    "images_evaluated": 654,
+    "expected_images": 654,
+    "split": "test",
+    "mean_inference_ms": 1119.3579747661981,
+    "median_inference_ms": 1078.8488001562655,
+    "gpu_peak_allocated_mb": null,
+    "max_process_rss_mb": 832.75390625,
+    "aggregation": "Equal per-image average; no scale fitting or alignment"
+  },
+  "median_absrel": 0.09545346781165905,
+  "worst_cases": [
+    {
+      "test_position": 42,
+      "zero_based_index": 87,
+      "matlab_id": 88,
+      "absrel": 0.6198235494304797,
+      "rmse_m": 2.0117458002312483,
+      "delta1": 0.26908534540576795,
+      "valid_pixels": 238560,
+      "prediction_clipped_pixels": 80488,
+      "inference_ms": 1037.9666001535952,
+      "gpu_peak_allocated_mb": null,
+      "encoder_shape": [
+        1,
+        3,
+        434,
+        574
+      ],
+      "output_shape": [
+        480,
+        640
+      ],
+      "process_rss_mb": 776.67578125,
+      "prediction_sha256": "5e5f09f581bb5491f4378b3f991fdacd34a58f8b901c7724a24a1be808b27725",
+      "scene": "bookstore_0001",
+      "scene_type": "bookstore",
+      "median_raw_pred_gt_ratio": 1.6990455389022827,
+      "note": "RGB 中是书店的桌面、书堆和后方空间。预测仍保留了部分前后层次，但桌面、书堆与背景的距离整体偏大，远处部分区域达到 10 米的显示上限。误差覆盖较大片区域，说明局限不仅是边缘不够清楚，还包含绝对尺度偏差。这里没有用该图的真值对预测进行尺度校准。"
+    },
+    {
+      "test_position": 184,
+      "zero_based_index": 468,
+      "matlab_id": 469,
+      "absrel": 0.4446621830858603,
+      "rmse_m": 1.2391973940201146,
+      "delta1": 0.5528043259557344,
+      "valid_pixels": 238560,
+      "prediction_clipped_pixels": 0,
+      "inference_ms": 1035.5863999575377,
+      "gpu_peak_allocated_mb": null,
+      "encoder_shape": [
+        1,
+        3,
+        434,
+        574
+      ],
+      "output_shape": [
+        480,
+        640
+      ],
+      "process_rss_mb": 801.08203125,
+      "prediction_sha256": "ee6f2ecae432814378e9dcc90a83f370afd67b5670001e85aef5ba570381d202",
+      "scene": "study_0001",
+      "scene_type": "study",
+      "median_raw_pred_gt_ratio": 1.2311656475067139,
+      "note": "RGB 中可见门框、书柜以及两块带反射内容的镜面外观区域。给定真值在反射区域内部显示出明显更大的深度，而预测将该区域处理得更接近平滑平面，内部和周围边界存在较大误差。镜面会使视觉线索与深度传感器测量的解释更复杂；本实验只报告与给定 filled GT 的差异，没有单独验证材质，也未将模型误差与真值误差分离。"
+    },
+    {
+      "test_position": 201,
+      "zero_based_index": 516,
+      "matlab_id": 517,
+      "absrel": 0.39941221367986995,
+      "rmse_m": 0.7894872234627186,
+      "delta1": 0.5818033199195171,
+      "valid_pixels": 238560,
+      "prediction_clipped_pixels": 0,
+      "inference_ms": 1091.9289998710155,
+      "gpu_peak_allocated_mb": null,
+      "encoder_shape": [
+        1,
+        3,
+        434,
+        574
+      ],
+      "output_shape": [
+        480,
+        640
+      ],
+      "process_rss_mb": 801.296875,
+      "prediction_sha256": "2d381f04dc401ba6c487bd433480d829b3d02c269c1c89764f20961fdedb2228",
+      "scene": "bedroom_0133",
+      "scene_type": "bedroom",
+      "median_raw_pred_gt_ratio": 1.108150839805603,
+      "note": "RGB 中是书堆、书架、椅子、床和明亮窗户。预测保留了椅子的大致轮廓与主要前后关系，但左侧近处书堆、书架和椅子边缘出现明显深度偏差。图像同时包含明亮窗户和暗色前景，但单个案例不足以证明曝光差异是唯一原因；这里将其作为近处杂物、边界和局部距离错误的综合案例。"
+    }
+  ],
+  "case_selection": "Three largest AbsRel images; analysis only, no model/scale tuning"
+}

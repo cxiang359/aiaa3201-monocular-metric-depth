@@ -1,0 +1,14 @@
+[
+  {
+    "path": "data\\splits.mat",
+    "url": "https://horatio.cs.nyu.edu/mit/silberman/indoor_seg_sup/splits.mat",
+    "bytes": 2626,
+    "sha256": "6e081404491a8bfba2f066beaa9713ef6046f9007aa5f799f2a350506a580cee"
+  },
+  {
+    "path": "data\\nyu_depth_v2_labeled.mat",
+    "url": "https://horatio.cs.nyu.edu/mit/silberman/nyu_depth_v2/nyu_depth_v2_labeled.mat",
+    "bytes": 2972037809,
+    "sha256": "2d724b0c0ab358aa1ce5df855e5bd14a2279ab7202efe22f32a30d612dcb86aa"
+  }
+]

@@ -35,3 +35,16 @@ runs/
 *.tar
 *.tar.gz
 *.7z
+
+# Module-local datasets, dependencies and generated previews
+/part1/data/
+/part2/data/
+/part2/vendor/
+/part2/weights/
+/part2/.tmp/
+/part1/results/_invalid*/
+/part1/results/*/arrays/
+/part2/results/*/predictions/
+/part2/results/*/samples/
+*.html
+*.partial

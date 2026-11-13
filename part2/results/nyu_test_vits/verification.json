@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "checked_utc": "2026-11-11T07:43:48.898726+00:00",
+  "images_checked": 654,
+  "full_split_complete": true,
+  "checks": [
+    "raw float32 depth and hashes",
+    "official test/train IDs",
+    "GT crop and masks",
+    "independent AbsRel/RMSE/delta1",
+    "equal image aggregation",
+    "source hashes",
+    "PNG and HTML embedded image decoding"
+  ]
+}

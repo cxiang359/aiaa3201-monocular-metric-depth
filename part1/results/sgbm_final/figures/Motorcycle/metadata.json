@@ -1,0 +1,43 @@
+{
+  "gt_valid_pixels": 360593,
+  "evaluated_pixels": 303128,
+  "valid_fraction": 0.840637505442424,
+  "mae_px": 1.158355436586578,
+  "sum_absolute_error_px": 351129.9667816162,
+  "scene": "Motorcycle",
+  "width": 741,
+  "height": 497,
+  "num_disparities": 80,
+  "calib_ndisp": 70.0,
+  "inference_ms": 48.01579983904958,
+  "timing_samples_ms": [
+    49.10420021042228,
+    48.01579983904958,
+    40.87410029023886
+  ],
+  "pipeline_ms": 42.217000387609005,
+  "input_sha256": {
+    "im0.png": "a7b3988b02447c190309b0503da3db036d0c6c0380c3b9b6acda3d66594f5312",
+    "im1.png": "9bb3c7fa53a27f003223b2fc504f86e1647f70cb2d25f3baedf3127957934a87",
+    "calib.txt": "d886e8f78085eb3a13f45e1a70a5fdbeb09a2a2091e364536269318d4ffa5e52",
+    "disp0GT.pfm": "b7c4557ec53314d97643f3e3f7c4098eb992aaab193937e03a7759b42dfa6f11"
+  },
+  "lr_reverse_inference_ms": 36.17439977824688,
+  "lr_checked_pixels": 281936,
+  "lr_failed_fraction_of_checked": 0.015503518529027864,
+  "visualization_ranges": {
+    "disparity_px": [
+      0.0,
+      80.0
+    ],
+    "depth_m": [
+      2.0762436389923096,
+      4.2193403244018555
+    ],
+    "absolute_error_px": [
+      0,
+      10.0
+    ],
+    "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+  }
+}

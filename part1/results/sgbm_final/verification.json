@@ -1,0 +1,111 @@
+{
+  "status": "pass",
+  "checked_utc": "2026-11-09T15:01:02.171169+00:00",
+  "scene_count": 15,
+  "decoded_png_count": 110,
+  "source_hashes_match": true,
+  "input_hashes_match": true,
+  "checks": [
+    "independent struct PFM reader",
+    "fixed-point scaling",
+    "valid masks and NaNs",
+    "metric depth geometry and units",
+    "per-scene/CSV/summary metrics",
+    "LR status invariants",
+    "PNG decodability",
+    "input and source hashes"
+  ],
+  "scenes": [
+    {
+      "scene": "Adirondack",
+      "mae_px": 1.2950976678313102,
+      "valid_fraction": 0.833023402588767,
+      "status": "pass"
+    },
+    {
+      "scene": "ArtL",
+      "mae_px": 2.075610810464632,
+      "valid_fraction": 0.6509499838455847,
+      "status": "pass"
+    },
+    {
+      "scene": "Jadeplant",
+      "mae_px": 5.512497717355024,
+      "valid_fraction": 0.5674790303653314,
+      "status": "pass"
+    },
+    {
+      "scene": "Motorcycle",
+      "mae_px": 1.158355436586578,
+      "valid_fraction": 0.840637505442424,
+      "status": "pass"
+    },
+    {
+      "scene": "MotorcycleE",
+      "mae_px": 1.288802361940987,
+      "valid_fraction": 0.7721336797996633,
+      "status": "pass"
+    },
+    {
+      "scene": "Piano",
+      "mae_px": 1.2486626911106133,
+      "valid_fraction": 0.8185264125970161,
+      "status": "pass"
+    },
+    {
+      "scene": "PianoL",
+      "mae_px": 6.136265732521008,
+      "valid_fraction": 0.60854611096957,
+      "status": "pass"
+    },
+    {
+      "scene": "Pipes",
+      "mae_px": 2.103912067269669,
+      "valid_fraction": 0.7836602485447282,
+      "status": "pass"
+    },
+    {
+      "scene": "Playroom",
+      "mae_px": 1.3601202048578112,
+      "valid_fraction": 0.7561291019547037,
+      "status": "pass"
+    },
+    {
+      "scene": "Playtable",
+      "mae_px": 1.2706303563699122,
+      "valid_fraction": 0.8209076518872697,
+      "status": "pass"
+    },
+    {
+      "scene": "PlaytableP",
+      "mae_px": 1.0628092235551434,
+      "valid_fraction": 0.8273058656754444,
+      "status": "pass"
+    },
+    {
+      "scene": "Recycle",
+      "mae_px": 0.8160268273315364,
+      "valid_fraction": 0.833061583935687,
+      "status": "pass"
+    },
+    {
+      "scene": "Shelves",
+      "mae_px": 1.7310554374175395,
+      "valid_fraction": 0.8014530421169426,
+      "status": "pass"
+    },
+    {
+      "scene": "Teddy",
+      "mae_px": 0.71030612396922,
+      "valid_fraction": 0.8145220008251827,
+      "status": "pass"
+    },
+    {
+      "scene": "Vintage",
+      "mae_px": 1.8447548199514885,
+      "valid_fraction": 0.6687844985350595,
+      "status": "pass"
+    }
+  ],
+  "verifier_sha256": "343e979dd96824698ead44a37e4602e9dbc39a1a11fafcf579cd7972fefafa77"
+}

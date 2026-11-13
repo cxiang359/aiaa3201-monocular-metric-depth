@@ -1,0 +1,43 @@
+{
+  "gt_valid_pixels": 306154,
+  "evaluated_pixels": 253283,
+  "valid_fraction": 0.8273058656754444,
+  "mae_px": 1.0628092235551434,
+  "sum_absolute_error_px": 269191.5085697174,
+  "scene": "PlaytableP",
+  "width": 681,
+  "height": 462,
+  "num_disparities": 80,
+  "calib_ndisp": 73.0,
+  "inference_ms": 42.95419994741678,
+  "timing_samples_ms": [
+    44.22010015696287,
+    42.95419994741678,
+    39.09400012344122
+  ],
+  "pipeline_ms": 50.52429996430874,
+  "input_sha256": {
+    "im0.png": "e59c9db5a1fc3b19b4dbcb8a3c735f6119bcf5f6f148d39d4249ad81973a95e3",
+    "im1.png": "779213a6ee111e936cf44bd54e8b5d302a697cfcedd4a5e4d73ddaa326f9f8c2",
+    "calib.txt": "a789f540c408802f3d6d469ff4e6894561105e2d2cd24a86172490173ef13a4e",
+    "disp0GT.pfm": "197f58b51ce80acbd53680948d3b4cb36f1671fcf40488cb61f239550179036b"
+  },
+  "lr_reverse_inference_ms": 45.26429995894432,
+  "lr_checked_pixels": 233297,
+  "lr_failed_fraction_of_checked": 0.025954041415020338,
+  "visualization_ranges": {
+    "disparity_px": [
+      0.0,
+      80.0
+    ],
+    "depth_m": [
+      1.3843779563903809,
+      3.0528128147125244
+    ],
+    "absolute_error_px": [
+      0,
+      10.0
+    ],
+    "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+  }
+}

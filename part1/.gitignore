@@ -1,0 +1,11 @@
+data/
+*.zip
+results/*/arrays/
+__pycache__/
+*.pyc
+.venv/
+
+# Generated local previews and bulk records
+*.html
+html_export_manifest.json
+results/_invalid*/

@@ -3,6 +3,17 @@ AIAA 3201 · Project 3
 
 从双目几何和逐帧单目基线出发，复现单图度量深度与视频深度模型，探索轻量改进，并完成深度应用 Demo。
 
+## Part 1A / Part 2A：已完成实验
+
+本分支 `part1a-2a` 发布双目几何与单图度量深度成果。视频分支为 [`part1b-2b`](https://github.com/cxiang359/aiaa3201-monocular-metric-depth/tree/part1b-2b)，尚未合并。
+
+| 模块 | 说明 | 正式结果 |
+| --- | --- | --- |
+| [Part 1A：Classical Stereo](part1/README.md) | 固定 StereoSGBM，Middlebury 15 对 trainingQ | MAE 1.9743 px；有效比例 75.98% |
+| [Part 2A：Single-Image Metric Depth](part2/README.md) | UniDepthV2 ViT-S，NYU 654 张测试，RGB-only，无测试尺度对齐 | AbsRel 0.110923；RMSE 0.393103 m；δ1 89.4488% |
+
+结果讨论：[双目分析](part1/ANALYSIS.md)、[单图深度分析](part2/ANALYSIS.md)。上传范围、目录结构及未上传内容见 [PUBLICATION.md](PUBLICATION.md)。两部分均为 CPU 实验；与其他硬件结果比较时须报告设置。
+
 ## 成员与分工
 
 | 成员 | Part 1 | Part 2 |
@@ -49,14 +60,14 @@ Part 3、评价协议、报告和最终 Demo 共同完成；通过分支与 Pull
 
 - **Middlebury Stereo v3**：quarter-resolution 数据及左视图真值，使用 15 对训练图和标定文件进行双目实验。
 - **NYU Depth V2**：使用 2.77 GB labeled MATLAB 数据、标准评估划分和 Depth Anything V2 metric-depth 评价协议。
-- **自录视频**：覆盖静态与移动相机场景；保存浮点深度，采用固定可视化范围。
-- **指标**：AbsRel、SqRel、RMSE、RMSE-log、δ1/δ2/δ3；边界精度；光流对齐后的非遮挡区域时序误差与逐帧尺度漂移；FPS、延迟、峰值显存、模型大小与输入分辨率。
+- **指定视频**：使用课程要求的 davis_rollercoaster.mp4；不要求额外自录视频。保存浮点深度，采用整段固定可视化范围。
+- **必需指标**：NYU 的 AbsRel、RMSE、δ1；双目的视差 MAE 与有效预测比例；推理时间和资源设置。视频定性比较为必需，时序误差、尺度漂移及边界精度为可选分析。
 
-比较方法时统一数据划分、预处理、输入分辨率、评价代码及视频帧。相对深度仅在基准评价中按协议对齐；单图 metric 模型不做测试集尺度对齐。展示镜面、玻璃、天空、运动模糊及细物体等失败案例。
+比较方法时统一数据划分、预处理、输入分辨率、评价代码及视频帧。视频相对深度采用整段固定归一化，颜色不代表共享米制尺度；单图 metric 模型不做测试集尺度对齐。展示实际数据中出现的困难案例。
 
 ## 环境与实验管理
 
-当前处于开发准备阶段，安装、推理与评价命令将在模块实现后补充。
+Part 1A / Part 2A 已完成，安装、数据准备、运行和核验命令见各模块 README。模块自身使用 `part1/data/`、`part2/data/`、`part2/weights/` 与各自 `results/`；不要移动这些文件，否则相对路径和来源校验将失效。
 
 1. 克隆仓库：`git clone https://github.com/cxiang359/aiaa3201-monocular-metric-depth.git`。
 2. 按所选模型官方实现准备环境，记录 Python、依赖版本、GPU/CUDA、上游 commit 和 checkpoint。
@@ -69,7 +80,7 @@ Part 3、评价协议、报告和最终 Demo 共同完成；通过分支与 Pull
 ## 提交物
 
 - **报告**：CVPR LaTeX 格式，6–8 页（不含参考文献），camera-ready；包含引言、相关工作、方法、定量/定性实验、消融、失败案例与结论。摘要末尾注明公开 GitHub 链接，引用课程推荐论文、数据集、模型及外部代码。
-- **arXiv**：按项目技术说明上传最终报告，在 Canvas 提交首页注明 arXiv ID；发布要求以课程最终通知为准。
+- **arXiv（可选）**：课程 PDF 将上传列为可选；若上传，在 Canvas 提交首页注明 arXiv ID，最终以课程通知为准。
 - **代码**：公开 GitHub 仓库，README 提供依赖、数据准备、权重来源、运行与评价命令及代表性结果。
-- **Depth Demo & Video**：提交必需片段的处理后视频及可运行或录制的应用 Demo，展示 RGB、预测深度和应用输出，打包为 `depth results.zip`。
+- **Depth Demo & Video**：提交必需片段的处理后视频及可运行或录制的应用 Demo，展示 RGB、预测深度和应用输出，打包为 `depth_results.zip`。
 - **进度展示**：4 分钟录像，介绍方法、实验与下一步计划；至少完成 Part 1，争取完成 Part 2。

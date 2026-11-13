@@ -1,0 +1,43 @@
+{
+  "gt_valid_pixels": 328965,
+  "evaluated_pixels": 263650,
+  "valid_fraction": 0.8014530421169426,
+  "mae_px": 1.7310554374175395,
+  "sum_absolute_error_px": 456392.7660751343,
+  "scene": "Shelves",
+  "width": 738,
+  "height": 497,
+  "num_disparities": 64,
+  "calib_ndisp": 60.0,
+  "inference_ms": 39.30669976398349,
+  "timing_samples_ms": [
+    38.40220021083951,
+    39.30669976398349,
+    44.439100194722414
+  ],
+  "pipeline_ms": 37.85069985315204,
+  "input_sha256": {
+    "im0.png": "ec20b8b4f1334d5a7167fe214ca32207b3cf5a490e0a68c92ee4672225e521f5",
+    "im1.png": "76095d15bb1173334d6cd4374cf54cf195033ae68a453392b0717d79b50cfd77",
+    "calib.txt": "d202fb16fb03a377e3179b2da77a605a2a896464425223dc92523552fd8c0608",
+    "disp0GT.pfm": "afec37afab28de8542cf5dc14611210ff920c40a0a0f409ecdcc40ae77205ae5"
+  },
+  "lr_reverse_inference_ms": 36.24929999932647,
+  "lr_checked_pixels": 274835,
+  "lr_failed_fraction_of_checked": 0.03273236669274292,
+  "visualization_ranges": {
+    "disparity_px": [
+      0.0,
+      64.0
+    ],
+    "depth_m": [
+      2.489384651184082,
+      3.528956413269043
+    ],
+    "absolute_error_px": [
+      0,
+      10.0
+    ],
+    "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+  }
+}

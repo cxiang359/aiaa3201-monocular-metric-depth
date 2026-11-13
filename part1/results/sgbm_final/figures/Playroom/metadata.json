@@ -1,0 +1,43 @@
+{
+  "gt_valid_pixels": 314728,
+  "evaluated_pixels": 237975,
+  "valid_fraction": 0.7561291019547037,
+  "mae_px": 1.3601202048578112,
+  "sum_absolute_error_px": 323674.6057510376,
+  "scene": "Playroom",
+  "width": 699,
+  "height": 476,
+  "num_disparities": 96,
+  "calib_ndisp": 83.0,
+  "inference_ms": 36.689099855721,
+  "timing_samples_ms": [
+    35.21290002390742,
+    36.689099855721,
+    40.36539979279041
+  ],
+  "pipeline_ms": 50.48559978604317,
+  "input_sha256": {
+    "im0.png": "8063ce1fef9c5cc36c9c61f3f22dee26e7287af9044df6fb0bfa6d4b3fde9d1e",
+    "im1.png": "54503fdcf6bc7f2af228756f6c6e35570e6f3003763c799aa9ddbdd34c9b1c0c",
+    "calib.txt": "d7b2f1e8e00dae0d1e576bf66b440509ba844dad7481a0b5ef23ea0747461caa",
+    "disp0GT.pfm": "8e39ebb0f392ca9c5a98638f71ab355a7b7eaea3a9a7c21d32e00e2d9e4165c9"
+  },
+  "lr_reverse_inference_ms": 41.61479976028204,
+  "lr_checked_pixels": 223075,
+  "lr_failed_fraction_of_checked": 0.03891964585901603,
+  "visualization_ranges": {
+    "disparity_px": [
+      0.0,
+      96.0
+    ],
+    "depth_m": [
+      2.473841428756714,
+      4.122777938842773
+    ],
+    "absolute_error_px": [
+      0,
+      10.0
+    ],
+    "depth_range_source": "2nd/98th percentiles of valid predicted depth, visualization only"
+  }
+}
