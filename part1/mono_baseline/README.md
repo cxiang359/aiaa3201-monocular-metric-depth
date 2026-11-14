@@ -1,7 +1,10 @@
 # Part 1b · Monocular frame baseline (and shared setup for Part 2b)
 
-Depth Anything V2-Small runs independently on the first 100 frames of
-`davis_rollercoaster.mp4`. Its output is **relative depth** (affine-invariant inverse
+Depth Anything V2-Small runs independently on every frame of `davis_rollercoaster.mp4`.
+The project asks for the first 100 frames, but the clip shipped with Video-Depth-Anything has
+only **70 frames** (24 fps, resized to 640×360 by `--max_res 640`), so all 70 are used. The
+extraction and the official VDA `run.py --max_len 100` both stop at 70 (checked:
+`results/logs/p2b_vda_official_check.json`). Its output is **relative depth** (affine-invariant inverse
 depth, larger = nearer); it is never converted to meters or aligned to ground truth.
 The same frames feed the Video Depth Anything run in `part2/video_depth/`.
 
@@ -35,7 +38,7 @@ Record both upstream commits (`git -C external/<repo> rev-parse --short HEAD`); 
 ## 3. Run (from the repo root)
 
 ```bash
-# shared: first 100 frames at the original frame rate, resized like VDA --max_res 640
+# shared: first 100 frames (the clip has 70, all used) at the original frame rate, resized like VDA --max_res 640
 python part1/mono_baseline/extract_frames.py --num_frames 100 --max_res 640
 
 # Part 1b: frame-wise DA V2-S, raw float output + latency / peak memory log
@@ -48,8 +51,8 @@ Outputs (local only, ignored by git):
 
 | Path | Content |
 | --- | --- |
-| `results/raw/davis_frames/frames.npz`, `meta.json` | 100 RGB frames, fps, size, reader used |
-| `results/raw/part1b_da2/depth.npz` | `depth`: float32 `[100, H, W]`, no normalization |
+| `results/raw/davis_frames/frames.npz`, `meta.json` | 70 RGB frames (640×360, 24 fps), reader used |
+| `results/raw/part1b_da2/depth.npz` | `depth`: float32 `[70, 360, 640]`, no normalization |
 | `results/logs/<run_id>.json` | GPU, precision (FP32), input size 518, ms/frame, peak MB, commits, command |
 
 ## Notes

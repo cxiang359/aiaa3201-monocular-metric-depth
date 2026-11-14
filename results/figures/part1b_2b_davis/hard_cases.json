@@ -1,0 +1,62 @@
+{
+  "Thin truss and rail ties": {
+    "frame": 31,
+    "crop_xyxy": [
+      260,
+      0,
+      460,
+      200
+    ],
+    "fg_px_in_crop": 11459,
+    "valid_px_in_crop": 8127,
+    "valid_fraction_of_fg": 0.7092241905925474,
+    "DA V2-S (frame-wise)": {
+      "median_value_fg_crop": 0.6506242752075195,
+      "residual_mean_valid_crop": 0.02795463800430298
+    },
+    "VDA-S (video)": {
+      "median_value_fg_crop": 0.5600475668907166,
+      "residual_mean_valid_crop": 0.014174265787005424
+    }
+  },
+  "Train and riders": {
+    "frame": 10,
+    "crop_xyxy": [
+      110,
+      70,
+      310,
+      170
+    ],
+    "fg_px_in_crop": 11468,
+    "valid_px_in_crop": 9274,
+    "valid_fraction_of_fg": 0.8086850366236484,
+    "DA V2-S (frame-wise)": {
+      "median_value_fg_crop": 0.7093536853790283,
+      "residual_mean_valid_crop": 0.0405547171831131
+    },
+    "VDA-S (video)": {
+      "median_value_fg_crop": 0.6944117546081543,
+      "residual_mean_valid_crop": 0.010126149281859398
+    }
+  },
+  "Far content entering": {
+    "frame": 67,
+    "crop_xyxy": [
+      430,
+      230,
+      640,
+      360
+    ],
+    "fg_px_in_crop": 8558,
+    "valid_px_in_crop": 7455,
+    "valid_fraction_of_fg": 0.8711147464360832,
+    "DA V2-S (frame-wise)": {
+      "median_value_fg_crop": 0.11024684458971024,
+      "residual_mean_valid_crop": 0.016135690733790398
+    },
+    "VDA-S (video)": {
+      "median_value_fg_crop": 0.10698714852333069,
+      "residual_mean_valid_crop": 0.004492352716624737
+    }
+  }
+}

@@ -4,17 +4,79 @@
     "scale_jump_mean_abs_log": 0.014043400787066776,
     "scale_jump_max_abs_log": 0.05782056599855423,
     "scale_jump_max_at_pair": 43,
-    "median_curve_mean_abs_2nd_diff": 0.020325947552919388
+    "median_curve_mean_abs_2nd_diff": 0.020325947552919388,
+    "scale_jump_mean_pct": 1.4249609372869485,
+    "scale_jump_max_pct": 5.9524863866784035,
+    "scale_jump_top3_pairs": [
+      43,
+      41,
+      2
+    ],
+    "scale_jump_top3_log": [
+      -0.05782056599855423,
+      -0.05039919540286064,
+      -0.04470708593726158
+    ],
+    "scale_jump_sign_changes": 40,
+    "pairs_scale_jump_gt_2pct": 19,
+    "flow_err_blend_pairs_mean": 0.02826959826052189,
+    "flow_err_other_pairs_mean": 0.02844399684930549,
+    "median_curve_min": [
+      0.6218887567520142,
+      5
+    ],
+    "median_curve_max": [
+      0.7259122729301453,
+      57
+    ],
+    "median_curve_range": 0.1040235161781311
   },
   "VDA-S (video)": {
     "flow_warped_abs_err_mean": 0.014539980005634867,
     "scale_jump_mean_abs_log": 0.0030937735753705847,
     "scale_jump_max_abs_log": 0.014014536514878273,
     "scale_jump_max_at_pair": 68,
-    "median_curve_mean_abs_2nd_diff": 0.005654002074152231
+    "median_curve_mean_abs_2nd_diff": 0.005654002074152231,
+    "scale_jump_mean_pct": 0.31048980649728714,
+    "scale_jump_max_pct": 1.4113200502973964,
+    "scale_jump_top3_pairs": [
+      68,
+      28,
+      29
+    ],
+    "scale_jump_top3_log": [
+      -0.014014536514878273,
+      -0.01289848331362009,
+      -0.01256126631051302
+    ],
+    "scale_jump_sign_changes": 14,
+    "pairs_scale_jump_gt_2pct": 0,
+    "flow_err_blend_pairs_mean": 0.015114053411202298,
+    "flow_err_other_pairs_mean": 0.014337365862493422,
+    "median_curve_min": [
+      0.6309187412261963,
+      34
+    ],
+    "median_curve_max": [
+      0.7136740684509277,
+      64
+    ],
+    "median_curve_range": 0.08275532722473145
   },
   "_pairs_where_VDA_lower_err": 1.0,
+  "_pairs_where_VDA_lower_err_count": [
+    69,
+    69
+  ],
+  "_flow_err_ratio_DA2_over_VDA": 1.9531320919471242,
+  "_num_frames": 70,
+  "_pair_index": "pair t compares frame t with frame t+1",
+  "_blend_zones": [
+    "24-31",
+    "46-53",
+    "68-69"
+  ],
   "_valid_px_per_pair_median": 43549,
   "_source": "raw",
-  "_note": "flow = Farneback on RGB, fb<2.0px, fg>0.05, 3x3 erosion; values in clip-normalized units; consistency only, no GT. video source = approximate (8-bit, compressed)."
+  "_note": "flow = Farneback on RGB, fb<2.0px, fg>0.05, 3x3 erosion; values in clip-normalized units; consistency only, no GT."
 }

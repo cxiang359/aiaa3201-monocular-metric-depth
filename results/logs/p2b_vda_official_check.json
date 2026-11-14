@@ -1,0 +1,47 @@
+{
+  "official_cmd": "run.py --encoder vits --max_len 100 --max_res 640 --save_npz (default FP16, input_size 518)",
+  "frames": {
+    "official_shape": [
+      70,
+      360,
+      640,
+      3
+    ],
+    "ours_shape": [
+      70,
+      360,
+      640,
+      3
+    ],
+    "fps": 24.0,
+    "identical": true
+  },
+  "official_vs_ours": {
+    "shape": [
+      70,
+      360,
+      640
+    ],
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "max_abs_diff_over_p2_p98_range": 0.0,
+    "mean_abs_diff_over_p2_p98_range": 0.0,
+    "p99_abs_diff_over_p2_p98_range": 0.0,
+    "pearson_r": 1.0,
+    "bitwise_equal": true
+  },
+  "noise_floor_ours_vs_ours_rerun": {
+    "shape": [
+      70,
+      360,
+      640
+    ],
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "max_abs_diff_over_p2_p98_range": 0.0,
+    "mean_abs_diff_over_p2_p98_range": 0.0,
+    "p99_abs_diff_over_p2_p98_range": 0.0,
+    "pearson_r": 1.0,
+    "bitwise_equal": true
+  }
+}

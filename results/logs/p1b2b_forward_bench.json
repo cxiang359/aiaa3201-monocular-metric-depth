@@ -1,0 +1,47 @@
+{
+  "gpu": "NVIDIA RTX A6000",
+  "torch": "2.1.1+cu121",
+  "cuda": "12.1",
+  "python": "3.10.22",
+  "input_size": 518,
+  "frame_hw": [
+    360,
+    640
+  ],
+  "reps": 20,
+  "note": "GPU forward only, preprocessed tensors already on GPU, after warm-up",
+  "da2_tensor_hw": [
+    518,
+    924
+  ],
+  "da2_cpu_preprocess_ms": 43.8042881549336,
+  "da2_forward_ms_per_frame_fp32": [
+    28.124802256934345,
+    0.28869114648916006
+  ],
+  "da2_peak_mem_mb_fp32": 376.06591796875,
+  "da2_forward_ms_per_frame_fp16_autocast": [
+    21.22476410586387,
+    0.40919684264735257
+  ],
+  "da2_peak_mem_mb_fp16_autocast": 330.376953125,
+  "vda_forward_ms_per_window_fp16_autocast": [
+    239.15857668034732,
+    0.3684325083077669
+  ],
+  "vda_forward_ms_per_input_frame_fp16_autocast": 7.473705521260854,
+  "vda_forward_ms_per_new_frame_fp16_autocast": 10.870844394561242,
+  "vda_peak_mem_mb_fp16_autocast": 2492.447265625,
+  "vda_forward_ms_per_window_fp32": [
+    801.6108902636915,
+    0.9052918343924381
+  ],
+  "vda_forward_ms_per_input_frame_fp32": 25.05034032074036,
+  "vda_forward_ms_per_new_frame_fp32": 36.43685864834961,
+  "vda_peak_mem_mb_fp32": 3670.2939453125,
+  "vda_window": {
+    "frames_per_window": 32,
+    "new_frames_per_window": 22,
+    "windows_for_70_frames": 4
+  }
+}
