@@ -26,6 +26,9 @@ python part2/video_depth/compare_visualize.py --frames_idx 10 31 32 54 66
 python part2/video_depth/temporal_flicker.py --source raw
 # three difficult cases (crops + flow-compensated residuals)
 python part2/video_depth/hard_cases.py
+# stage-2 measurements M1-M5 (long-range drift, scale/shift, edges, flow floor, unclipped stats),
+# with Farneback and RAFT; RAFT weights download to $TORCH_HOME (set it if ~/.cache is full)
+python part2/video_depth/temporal_eval.py
 # efficiency: GPU-forward-only timing for both models (complements the end-to-end logs)
 python part2/video_depth/bench_forward.py
 ```
@@ -55,6 +58,7 @@ Outputs:
 | `results/figures/part1b_2b_davis/flicker_metrics.json`, `flicker_curves.json` | flow-compensated metrics (raw depth) and the per-pair curves | commit |
 | `results/figures/part1b_2b_davis/flicker_analysis.png`, `flicker_qualitative.png` | curves with VDA cross-fade zones; residual maps + x-t zoom | commit |
 | `results/figures/part1b_2b_davis/hard_cases.png`, `hard_cases.json` | three difficult cases | commit |
+| `results/figures/part1b_2b_davis/temporal_eval/` | M1–M5: `temporal_eval.md` (tables), `summary.json`, per-flow curves, `m1/m2/m3_*.png` | commit |
 | `results/logs/p2b_vda_official_check.json` | official `run.py` vs `run_vda.py` | commit |
 | `results/logs/p1b2b_forward_bench.json` | GPU-forward-only timing | commit |
 
