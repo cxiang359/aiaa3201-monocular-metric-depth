@@ -49,7 +49,7 @@ DEFAULT_METHODS = [
     "DA V2-S (frame-wise)|results/raw/part1b_da2/depth.npz",
     "VDA-S (video)|results/raw/part2b_vda/depth.npz",
 ]
-COLORS = ["C0", "C1", "C2", "C3", "C4"]
+COLORS = [f"C{i}" for i in range(10)]
 
 
 # ----------------------------------------------------------------------------- loading
